@@ -3,12 +3,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #AFD7F6;
-    color: #333;
+    background-color: #EBF4FA; /* สีฟ้าพาสเทลอ่อนๆ สำหรับพื้นหลัง */
+    color: #2C3E50;          /* สีน้ำเงินเข้มเกือบดำ สำหรับข้อความทั่วไปเพื่อให้สแกนสายตาง่าย */
 }
 
 header {
-    background: #4CAF50;
+    background: #1A5276;    /* สีน้ำเงินเข้ม (Deep Blue) สำหรับแถบหัวข้อ */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -28,26 +28,31 @@ section {
     max-width: 800px;
     background: white;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* เพิ่มมิติให้กล่องข้อความสีขาวดูเด่นขึ้น */
 }
+
 h2 {
-  color: #4CAF50;
+    color: #2980B9;         /* สีฟ้าสดใส (Ocean Blue) สำหรับหัวข้อหลัก */
 }
+
 .project {
     margin-bottom: 20px;
 }
 
 .project h3 {
     margin: 0 0 10px;
-    color: #333;
+    color: #1F618D;         /* สีน้ำเงินหม่น สำหรับหัวข้อย่อย */
 }
+
 ul {
     list-style-type: square; 
     padding-left: 20px;
 }
+
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333; 
+    background: #2C3E50;     /* สีน้ำเงินเข้มมืด สำหรับแถบท้ายหน้า */ 
     color: white;
     margin-top: 20px;
 }
