@@ -3,45 +3,52 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #EBF4FA; /* สีฟ้าพาสเทลอ่อนๆ สำหรับพื้นหลัง */
-    color: #2C3E50;          /* สีน้ำเงินเข้มเกือบดำ สำหรับข้อความทั่วไปเพื่อให้สแกนสายตาง่าย */
+    background-color: #E8F4F8; /* สีฟ้าพาสเทลนุ่มๆ สำหรับพื้นหลังเว็บ */
+    color: #4A5568;          /* สีเทาเข้มอมน้ำเงิน ทำให้อ่านง่ายและไม่ดูแข็งเท่าสีดำ */
 }
 
 header {
-    background: #1A5276;    /* สีน้ำเงินเข้ม (Deep Blue) สำหรับแถบหัวข้อ */
-    color: white;
-    padding: 20px 0;
+    background: #FBC5D8;    /* สีชมพูพาสเทลหวานๆ สำหรับแถบหัวข้อหลัก */
+    color: #4A2E35;          /* สีน้ำตาลเข้มอมชมพู เพื่อให้ตัวหนังสือบนพื้นสีชมพูอ่านง่ายชัดเจน */
+    padding: 30px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 24pt;
 }
 
 header p {
-    margin: 5px 0 0;
+    margin: 8px 0 0;
+    font-size: 12pt;
+    opacity: 0.85;
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
+    padding: 25px;
+    margin: 25px auto;
     max-width: 800px;
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* เพิ่มมิติให้กล่องข้อความสีขาวดูเด่นขึ้น */
+    border-radius: 12px;     /* เพิ่มความโค้งมนให้ดูนุ่มนวลเข้ากับสไตล์พาสเทล */
+    box-shadow: 0 4px 15px rgba(165, 201, 222, 0.2); /* เงาฟุ้งๆ โทนฟ้าอ่อน */
 }
 
 h2 {
-    color: #2980B9;         /* สีฟ้าสดใส (Ocean Blue) สำหรับหัวข้อหลัก */
+    color: #5DADE2;         /* สีฟ้าพาสเทลสดใส สำหรับหัวข้อหลัก (เช่น เกี่ยวกับฉัน, ผลงาน) */
+    border-bottom: 2px solid #FADBD8; /* เพิ่มเส้นคั่นใต้หัวข้อเป็นสีชมพูอ่อน */
+    padding-bottom: 8px;
+    margin-top: 0;
 }
 
 .project {
     margin-bottom: 20px;
+    padding: 10px 0;
 }
 
 .project h3 {
-    margin: 0 0 10px;
-    color: #1F618D;         /* สีน้ำเงินหม่น สำหรับหัวข้อย่อย */
+    margin: 0 0 8px;
+    color: #EC87BF;         /* สีชมพูเข้มพาสเทล สำหรับชื่อผลงาน */
 }
 
 ul {
@@ -49,10 +56,29 @@ ul {
     padding-left: 20px;
 }
 
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ตกแต่งจุด Bullet point ของรายการให้เป็นสีชมพูเข้ากับธีม */
+ul li::marker {
+    color: #EC87BF;
+}
+
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #2C3E50;     /* สีน้ำเงินเข้มมืด สำหรับแถบท้ายหน้า */ 
-    color: white;
-    margin-top: 20px;
+    padding: 20px 0;
+    background: #A9CCE3;     /* สีฟ้าพาสเทลโทนเข้มขึ้นมาหน่อยสำหรับแถบท้ายหน้า */
+    color: #2C3E50;          /* สีข้อความท้ายหน้า */
+    margin-top: 40px;
+}
+
+footer a {
+    color: #D81B60;         /* สีชมพูเข้มสำหรับลิงก์อีเมลให้โดดเด่น */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; /* ขีดเส้นใต้เมื่อเอาเมาส์ไปชี้ลิงก์ */
 }
