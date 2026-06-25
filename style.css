@@ -80,4 +80,5 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline; /*
+    text-decoration: underline; /* ขีดเส้นใต้เมื่อเอาเมาส์ไปชี้ลิงก์ */
+}
